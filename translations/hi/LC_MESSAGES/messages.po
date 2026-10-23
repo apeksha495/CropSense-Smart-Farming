@@ -1,0 +1,121 @@
+# Hindi translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2026-02-15 18:59+0530\n"
+"PO-Revision-Date: 2026-02-15 19:02+0530\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "User Login"
+msgstr "यूज़र लॉगिन"
+
+msgid "Username"
+msgstr "यूज़रनेम"
+
+msgid "Password"
+msgstr "पासवर्ड"
+
+msgid "Login"
+msgstr "लॉगिन"
+
+msgid "Invalid Credentials"
+msgstr "अमान्य विवरण"
+
+# ------------------- ADD NEW TRANSLATIONS BELOW THIS -------------------
+
+msgid "CropSense - Soil Crop Recommender"
+msgstr "क्रॉपसेंस - मृदा फसल सिफारिशकर्ता"
+
+msgid "Enter Soil and Climate Data"
+msgstr "मृदा और जलवायु डेटा दर्ज करें"
+
+msgid "Nitrogen (N) content (mg/kg):"
+msgstr "नाइट्रोजन (N) सामग्री (mg/kg):"
+
+msgid "Phosphorus (P) content (mg/kg):"
+msgstr "फॉस्फोरस (P) सामग्री (mg/kg):"
+
+msgid "Potassium (K) content (mg/kg):"
+msgstr "पोटैशियम (K) सामग्री (mg/kg):"
+
+msgid "Temperature (°C):"
+msgstr "तापमान (°C):"
+
+msgid "Humidity (%%)"
+msgstr "आर्द्रता (%%)"
+
+msgid "Soil pH:"
+msgstr "मिट्टी का pH:"
+
+msgid "Rainfall (mm):"
+msgstr "वर्षा (mm):"
+
+msgid "Moisture (%%)"
+msgstr "नमी (%%)"
+
+msgid "Soil Type:"
+msgstr "मिट्टी का प्रकार:"
+
+msgid "Clay"
+msgstr "चिकनी मिट्टी"
+
+msgid "Loamy"
+msgstr "दोमट मिट्टी"
+
+msgid "Saline soil"
+msgstr "खारी मिट्टी"
+
+msgid "Sandy"
+msgstr "रेतीली मिट्टी"
+
+msgid "Crop Type:"
+msgstr "फसल का प्रकार:"
+
+msgid "Cash crop"
+msgstr "नकदी/मुख्य फसल"
+
+msgid "Cereal"
+msgstr "अनाज"
+
+msgid "Fibre crop"
+msgstr "फाइबर/रेशेदार फसल"
+
+msgid "Fruit"
+msgstr "फल"
+
+msgid "Plantation crop"
+msgstr "बाग़/वनीकरण/प्लांटेशनफसल"
+
+msgid "Pulse"
+msgstr "दाल"
+
+msgid "nan"
+msgstr "प्रकार नहीं"
+
+msgid "🌾 Recommended Crop:"
+msgstr "🌾 अनुशंसित फसल:"
+
+msgid "Detailed Report"
+msgstr "विस्तृत रिपोर्ट"
+
+msgid "AI Explanation"
+msgstr "एआई व्याख्या"
+
+msgid "Back to Input Form"
+msgstr "इनपुट फॉर्म पर वापस जाएँ"
+
+msgid "🌾 Get Crop Advice"
+msgstr "🌾 फसल सुझाव प्राप्त करें"
+
+msgid "📈 Predicted Price After 30 Days: ₹ "
+msgstr "📈 30 दिनों बाद अनुमानित कीमत: ₹ "
+
+msgid "Price data not available for this crop"
+msgstr "इस फसल के लिए कीमत का डेटा उपलब्ध नहीं है"

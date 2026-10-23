@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Crop Recommendation System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef") no-repeat center center/cover;
+        }
+
+        .login-box {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            width: 350px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        .error {
+            color: #ff4d4d;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+
+   <!-- Language Selector -->
+<form method="GET" action="">
+    <select name="lang" onchange="this.form.submit()" 
+        style="margin-bottom:15px; padding:5px; border-radius:5px;">
+
+        <option value="en" {% if session.get('lang') == 'en' %}selected{% endif %}>
+            English
+        </option>
+
+        <option value="hi" {% if session.get('lang') == 'hi' %}selected{% endif %}>
+            Hindi
+        </option>
+
+    </select>
+</form>
+
+    <h2>🌾 {{ _('User Login') }}</h2>
+
+        <form method="POST">
+            <input type="text" name="username" placeholder="{{ _('Username') }}" required>
+           <input type="password" name="password" placeholder="{{ _('Password') }}" required>
+            <button type="submit">{{ _('Login') }}</button>
+        </form>
+
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+    </div>
+
+</body>
+</html>

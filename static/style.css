@@ -1,0 +1,238 @@
+/* ===== Global ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Center everything */
+.app-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Card container */
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #56ccf2;
+    box-shadow: 0 0 8px rgba(86, 204, 242, 0.5);
+}
+
+/* Submit button */
+input[type="submit"] {
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(47, 128, 237, 0.4);
+}
+
+/* Prediction text */
+.prediction {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* Centering layout */
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wrapper to hold form and heading */
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Card styling */
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #56ccf2;
+    box-shadow: 0 0 8px rgba(86, 204, 242, 0.5);
+}
+
+/* Submit button */
+input[type="submit"] {
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(47, 128, 237, 0.4);
+}
+
+/* Prediction text */
+.prediction {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+    background: linear-gradient(90deg, #43cea2, #185a9d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    animation: fadeInDown 0.8s ease-in-out;
+}
+
+/* Decorative underline */
+h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin: 8px auto 0;
+    background: linear-gradient(90deg, #43cea2, #185a9d);
+    border-radius: 4px;
+    animation: underlineGrow 0.8s ease-in-out forwards;
+}
+
+/* Heading fade-in animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Underline grow animation */
+@keyframes underlineGrow {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60px;
+    }
+}
+
+
+
+
+
+
+
+

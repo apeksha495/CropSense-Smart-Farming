@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ _('CropSense - Report') }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="center-wrapper">
+        <div class="card">
+
+<!-- AB ISS CODE SE REPLACE KAREIN: -->
+<div style="text-align:right;">
+    <a href="/set_language?lang=en">English</a> |
+    <a href="/set_language?lang=hi">हिंदी</a>
+</div>
+            <h1>📋 {{ _('Detailed Report') }}</h1>
+
+            <h3 class="prediction">{{ prediction_text }}</h3>
+
+{% if price_text %}
+    <h3>📈 {{ price_text }}</h3>
+{% endif %}
+
+<pre>{{ report_text }}</pre>
+            {% if gpt_text %}
+                <h3>🤖 {{ _('AI Explanation') }}</h3>
+                <p>{{ gpt_text }}</p>
+            {% endif %}
+
+            <a href="/">{{ _('⬅ Back to Input Form') }}</a>
+        </div>
+    </div>
+</body>
+</html>

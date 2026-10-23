@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CropSense - Soil Crop Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+    <div class="center-wrapper">
+        <div class="card">
+                    
+<!-- AB ISS CODE SE REPLACE KAREIN: -->
+<div style="text-align:right;">
+    <a href="/set_language?lang=en">English</a> |
+    <a href="/set_language?lang=hi">हिंदी</a>
+</div>
+            <h1>🌱  Enter Soil and Climate Data </h1>
+
+            <form action="/predict" method="post">
+                <label for="N">{{ _('Nitrogen (N) content (mg/kg):') }}</label>
+                <input type="text" name="N" id="N" required>
+
+                <label for="P">{{ _('Phosphorus (P) content (mg/kg):') }}</label>
+                <input type="text" name="P" id="P" required>
+
+                <label for="K">{{ _('Potassium (K) content (mg/kg):') }}</label>
+                <input type="text" name="K" id="K" required>
+
+                <label for="temperature">{{ _('Temperature (°C):') }}</label>
+                <input type="text" name="temperature" id="temperature" required>
+
+                <label for="humidity">{{ _('Humidity (%)') }}</label>
+                <input type="text" name="humidity" id="humidity" required>
+
+                <label for="ph">{{ _('Soil pH:') }}</label>
+                <input type="text" name="ph" id="ph" required>
+
+                <label for="rainfall">{{ _('Rainfall (mm):') }}</label>
+                <input type="text" name="rainfall" id="rainfall" required>
+
+                <label for="moisture">{{ _('Moisture (%)') }}</label>
+                <input type="text" name="moisture" id="moisture" required>
+
+               <label for="soil_type">{{ _('Soil Type:') }}</label>
+<select name="soil_type" id="soil_type" required>
+    {% for soil in soil_types %}
+        <option value="{{ soil }}">  <!-- English value sent to server -->
+            {% if session.get('lang') == 'hi' %}
+                {{ SOIL_TRANSLATIONS.get(soil, soil) }}  <!-- Hindi display -->
+            {% else %}
+                {{ soil }}
+            {% endif %}
+        </option>
+    {% endfor %}
+</select>
+
+<label for="crop_type">{{ _('Crop Type:') }}</label>
+<select name="crop_type" id="crop_type" required>
+    {% for crop in crop_types %}
+        <option value="{{ crop }}">  <!-- English value sent to server -->
+            {% if session.get('lang') == 'hi' %}
+                {{ CROP_TRANSLATIONS.get(crop, crop) }}  <!-- Hindi display -->
+            {% else %}
+                {{ crop }}
+            {% endif %}
+        </option>
+    {% endfor %}
+</select>
+                <input type="submit" value="{{ _('🌾 Get Crop Advice') }}">
+            </form>
+
+            {% if prediction_text %}
+                <h3 class="prediction">{{ prediction_text }}</h3>
+            {% endif %}
+
+            {% if report_text %}
+                <h3>📋 {{ _('Detailed Report') }}</h3>
+                <pre>{{ report_text }}</pre>
+            {% endif %}
+
+            {% if gpt_text %}
+               <h3>🤖 {{ _('AI Explanation') }}</h3>
+                <p>{{ gpt_text }}</p>
+            {% endif %}
+        </div>
+    </div>
+    
+</body>
+</html>
